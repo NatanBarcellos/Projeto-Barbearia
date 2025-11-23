@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Barbearia na Régua</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <!-- logo local -->
+        <img src="ChatGPT Image 23 de nov. de 2025, 12_44_02.png" alt="Logo Barbearia na Régua" class="logo">
+        <div class="brand-text">
+          <div class="name">Barbearia <strong>na Régua</strong></div>
+          <div class="tag">Desde 2024</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button id="dropdownBtn" class="menu-btn" aria-haspopup="true" aria-expanded="false">
+          Menu <span class="arrow">▾</span>
+        </button>
+
+        <ul id="dropdownList" class="dropdown" role="menu" aria-hidden="true">
+          <li role="menuitem"><a href="#" data-page="home">Home</a></li>
+          <li role="menuitem"><a href="#" data-page="agendamento">Agendamento</a></li>
+          <li role="menuitem"><a href="#" data-page="sobre">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME / LANDING -->
+    <section id="home" class="page active">
+      <div class="home-hero">
+        <div class="hero-content">
+          <h1>Estilo, Precisão e Confiança</h1>
+          <p class="lead">Cortes clássicos e modernos com atendimento que vira conversa. Venha sentir a diferença.</p>
+          <button class="primary-btn" data-page-target="agendamento">Agende Agora</button>
+        </div>
+        <div class="hero-side">
+          <!-- pequeno card com serviços -->
+          <div class="services-card">
+            <h3>Serviços</h3>
+            <ul>
+              <li>Corte masculino</li>
+              <li>Barba e navalha</li>
+              <li>Design de barba</li>
+              <li>Tratamentos capilares</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section id="agendamento" class="page">
+      <div class="container">
+        <h2>Agendamento</h2>
+        <p class="muted">Preencha os dados abaixo.</p>
+
+        <form id="formAgendamento" class="form">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" required>
+
+          <div class="row">
+            <div class="col">
+              <label for="data">Data</label>
+              <input id="data" name="data" type="date" required>
+            </div>
+            <div class="col">
+              <label for="hora">Horário</label>
+              <input id="hora" name="hora" type="time" required>
+            </div>
+          </div>
+
+          <label for="barbeiro">Escolha do barbeiro</label>
+          <select id="barbeiro" name="barbeiro" required>
+            <option value="lucas">Lucas</option>
+            <option value="rafael">Rafael</option>
+            <option value="bruno">Bruno</option>
+          </select>
+
+          <button type="submit" class="primary-btn">Confirmar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="page sobre-section">
+      <!-- fundo é a imagem local; o conteúdo do texto ficará num card claro -->
+      <div class="sobre-overlay">
+        <div class="container about-card">
+          <h2>Sobre a Barbearia Na Régua</h2>
+
+          <p>
+            A Na Régua nasceu em 2024 daquele jeito que as melhores ideias surgem:
+            no meio de um papo entre amigos, um café forte e a vontade de fazer diferente.
+            A gente sempre gostou do clima das antigas barbearias — aquele lugar onde o corte
+            não é só corte, é conversa, é resenha, é história pra contar. Então pensamos:
+            “Por que não criar um espaço que seja exatamente isso? Um ambiente onde a régua sempre
+            esteja alinhada, mas o clima sempre descontraído?”
+          </p>
+
+          <p>
+            Começamos pequeno, com duas máquinas, um balcão improvisado e muita vontade de entregar
+            o melhor. E foi assim, no ritmo do fade certo e da navalha afiada, que a Na Régua foi
+            tomando forma, ganhando estilo e conquistando a galera do bairro.
+          </p>
+
+          <p>
+            Hoje, seguimos com o mesmo propósito: oferecer cortes precisos, atendimento de verdade
+            e um ambiente onde todo mundo se sinta em casa. Porque aqui não é só barbearia — é ponto
+            de encontro, é aquele momento de cuidado, é a pausa do dia que faz diferença.
+          </p>
+
+          <p class="signature">Na Régua: desde 2024, deixando você sempre no estilo.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Barbearia na Régua</div>
+      <div class="social-muted">Rua Oscar Soares, 117 — Califórnia • (00) 00000-0000</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
